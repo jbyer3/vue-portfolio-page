@@ -1,14 +1,23 @@
 <template>
 <div>
-  <h1>this is whats up</h1>
+  <h1>this is a curtain call.</h1>
+  <h3>its name... {{ title }}</h3>
 </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Curtain Call',
   props: {
     msg: String
+  },
+  data: function() {
+    return {
+      title: 'fucking seriously?'
+    }
+  },
+  computed: {
+
   }
 }
 </script>
