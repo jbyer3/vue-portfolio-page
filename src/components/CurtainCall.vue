@@ -1,7 +1,10 @@
 <template>
-<div>
+<div class="container">
   <h1>this is a curtain call.</h1>
   <h3>its name... {{ title }}</h3>
+  <div class="square">
+    it went okay
+  </div>
 </div>
 </template>
 
@@ -37,5 +40,15 @@ li {
 }
 a {
   color: #42b983;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.square {
+  height: 23rem;
+  width: 23rem;
+  background: rgb(00,255,0);
 }
 </style>
