@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <h1>this is a curtain call.</h1>
-  <h3>its name... {{ title }}</h3>
+  <h3>its name..</h3>
   <div class="square">
     it went okay
   </div>
@@ -16,7 +16,7 @@ export default {
   },
   data: function() {
     return {
-      title: 'fucking seriously?'
+      title: 'seriously?'
     }
   },
   computed: {
