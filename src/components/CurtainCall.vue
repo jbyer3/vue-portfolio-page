@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'Curtain Call',
+  name: 'CurtainCall',
   props: {
     msg: String
   },
@@ -42,6 +42,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .square {
   height: 23rem;
