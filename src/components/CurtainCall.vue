@@ -3,7 +3,7 @@
   <h1>this is a curtain call.</h1>
   <h3>its name..</h3>
   <div class="square">
-    it went okay
+    it went okay, maybe you should checkout this 
   </div>
 </div>
 </template>
