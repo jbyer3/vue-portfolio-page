@@ -5,6 +5,16 @@
   <div class="square">
     it went okay, maybe you should checkout this 
   </div>
+
+
+  <div class="app-card">
+    <h4>app one</h4>
+    <a rel="stylesheet" href="https://tax-calc-app.herokuapp.com/">
+      <div class="img-holder">
+        <img src="@/assets/tax-calc-app.png" alt="project one">
+      </div>
+    </a>
+  </div>
 </div>
 </template>
 
@@ -14,11 +24,31 @@ export default {
   props: {
     msg: String
   },
-  data: function() {
-    return {
-      title: 'seriously?'
-    }
-  },
+  data: () => ({
+    projects: [
+      {
+        title: 'tax calc',
+        id: 11,
+        image: '@/assets/tax-calc-app.png',
+        description: 'todo',
+        focus: 'vue frontend framework'
+      },
+      {
+        title: 'tree view',
+        id: 22,
+        image: '@/assets/passport-tree.png',
+        description: '',
+        focus: 'reactive content without a JS Framework, vanilla JS only.'
+      },
+      {
+        title: 'pianist portfolio',
+        id: 33,
+        image: '@/assets/passport-tree.png',
+        description: 'todo',
+        focus: 'setting up a portfolio site for a professsional musician'
+      }
+    ]
+  }),
   computed: {
 
   }
