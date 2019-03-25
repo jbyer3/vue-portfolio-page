@@ -1,14 +1,19 @@
 <template>
 <div class="container">
-  <h1>Hey my name is Jason</h1>
-  <h3>I love making websites</h3>
+  <h1>Hey my name is Jason, and
+  I love making websites</h1>
+
+  <p>let me show you a few choice examples</p>
 
   <div v-for="project in projects" :key="project.id" class="app-card">
-    <h4>{{ project.title }}</h4>
+    
     <!-- <img :src="project.image" :alt="project.description"> -->
-    <a rel="stylesheet" :href="project.link">
+    <a :href="project.link">
+      <h3>{{ project.title }}</h3>
       <div class="img-holder">
         <img :src="project.image" v-bind:alt="project.description">
+        <p><span class="img-cap-title">description: </span>{{project.description}}</p>
+        <p><span class="img-cap-title">focus: </span>{{project.focus}}</p>
       </div>
     </a>
   </div>
@@ -28,22 +33,25 @@ export default {
         title: 'tax calc',
         id: 11,
         image: require('@/assets/tax-calc-app.png'),
-        description: 'todo',
-        focus: 'vue frontend framework'
+        description: 'a simple calculator to determine sales tax',
+        focus: 'vue frontend framework',
+        link: 'http://tax-calc-app.herokuapp.com/'
       },
       {
         title: 'tree view',
         id: 22,
         image: require('@/assets/passport-tree.png'),
-        description: '',
-        focus: 'reactive content without a JS Framework, vanilla JS only.'
+        description: 'a tree view generator, built using websockets and vanilla javascript',
+        focus: 'reactive content without a JS Framework, vanilla JS only.',
+        link: 'http://tree-4-passport.herokuapp.com/'
       },
       {
         title: 'pianist portfolio',
         id: 33,
         image: require('@/assets/business_card.jpg'),
-        description: 'todo',
-        focus: 'setting up a portfolio site for a professsional musician'
+        description: 'a portfolio site for my girlfriends business as a collaborative pianist',
+        focus: 'setting up a portfolio site for a professsional musician',
+        link: 'https://www.pengillyplayspiano.com/'
       }
     ]
   }),
@@ -74,8 +82,12 @@ a {
 }
 
 img {
-  height: 20rem;
+  width: 50rem;
   padding: 2rem;
   background: #fff;
+}
+
+.img-cap-title {
+  // color: darken(22%)
 }
 </style>
