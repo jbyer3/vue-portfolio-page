@@ -22,17 +22,12 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: #2c3e50;
+  background: #f5f7ff;
   min-height: 300px;
+
 }
-// .sidebar{
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   padding: 30px;
-//   background: orange; 
-// }
+
 #nav {
   // display: none;
   display: flex;

@@ -23,21 +23,3 @@ export default {
   })
 }
 </script>
-
-<style lang="scss" scoped>
-.home {
-  display: flex;
-  height: 100vh;
-  .sidebar {
-    background: red;
-    height: 100%;
-    flex-grow: 1;
-  }
-  .main {
-    background: green;
-    height: 100%;
-    flex-grow: 3;
-  }
-}
-</style>
-

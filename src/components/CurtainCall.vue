@@ -1,24 +1,11 @@
 <template>
 <div class="container">
-  <h1>this is a curtain call.</h1>
-  <h3>its name..</h3>
-  <div class="square">
-    it went okay, maybe you should checkout this 
-  </div>
+  <h1>Hey my name is Jason</h1>
+  <h3>I love making websites</h3>
 
-<!-- 
-  <div class="app-card">
-    <h4>app one</h4>
-    <a rel="stylesheet" href="https://tax-calc-app.herokuapp.com/">
-      <div class="img-holder">
-        <img src="@/assets/tax-calc-app.png" alt="project one">
-      </div>
-    </a>
-  </div> -->
-
-<div v-for="project in projects" :key="project.id" class="app-card">
+  <div v-for="project in projects" :key="project.id" class="app-card">
     <h4>{{ project.title }}</h4>
-    <img :src="project.image" :alt="project.description">
+    <!-- <img :src="project.image" :alt="project.description"> -->
     <a rel="stylesheet" :href="project.link">
       <div class="img-holder">
         <img :src="project.image" v-bind:alt="project.description">
@@ -40,21 +27,21 @@ export default {
       {
         title: 'tax calc',
         id: 11,
-        image: './assets/tax-calc-app.png',
+        image: require('@/assets/tax-calc-app.png'),
         description: 'todo',
         focus: 'vue frontend framework'
       },
       {
         title: 'tree view',
         id: 22,
-        image: '../assets/passport-tree.png',
+        image: require('@/assets/passport-tree.png'),
         description: '',
         focus: 'reactive content without a JS Framework, vanilla JS only.'
       },
       {
         title: 'pianist portfolio',
         id: 33,
-        image: '@/assets/passport-tree.png',
+        image: require('@/assets/business_card.jpg'),
         description: 'todo',
         focus: 'setting up a portfolio site for a professsional musician'
       }
@@ -82,12 +69,13 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: baseline;
+  margin-left: 5rem;
 }
-.square {
-  height: 23rem;
-  width: 23rem;
-  background: rgb(00,255,0);
+
+img {
+  height: 20rem;
+  padding: 2rem;
+  background: #fff;
 }
 </style>
