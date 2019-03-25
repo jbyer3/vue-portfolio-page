@@ -8,14 +8,14 @@
   <div v-for="project in projects" :key="project.id" class="app-card">
     
     <!-- <img :src="project.image" :alt="project.description"> -->
-    <a :href="project.link">
       <h3>{{ project.title }}</h3>
       <div class="img-holder">
-        <img :src="project.image" v-bind:alt="project.description">
+        <a :href="project.link">
+          <img :src="project.image" v-bind:alt="project.description">
+        </a>
         <p><span class="img-cap-title">description: </span>{{project.description}}</p>
         <p><span class="img-cap-title">focus: </span>{{project.focus}}</p>
       </div>
-    </a>
   </div>
 
 </div>
