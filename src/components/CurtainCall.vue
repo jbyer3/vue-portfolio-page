@@ -50,7 +50,7 @@ export default {
         id: 33,
         image: require('@/assets/business_card.jpg'),
         description: 'a portfolio site for my girlfriends business as a collaborative pianist',
-        focus: 'setting up a portfolio site for a professsional musician',
+        focus: 'setting up a portfolio site for a professional musician',
         link: 'https://www.pengillyplayspiano.com/'
       }
     ]
