@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> 
-      <router-link to="/about">Resume</router-link>
+      <router-link to="/resume">Resume</router-link>
       <!-- <router-link to="/about"></router-link> -->
     </div>
     <router-view/>
@@ -10,6 +10,8 @@
 </template>
 
 <style lang="scss">
+@import './src/sass/colors';
+
 html, body {
   padding: 0;
   margin: 0;
@@ -22,8 +24,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
-  color: #2c3e50;
-  background: #f5f7ff;
+  color: $black;
+  background: $offwhite;
   min-height: 300px;
 
 }
@@ -34,12 +36,14 @@ html, body {
   // flex-direction: column;
   align-items: flex-start;
   padding: 30px;
-  background: orange;
+  background: $orange;
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: $black;
+    margin-right: 2rem;
     &.router-link-exact-active {
-      color: #42b983;
+      // color: lighten($ofwhite, 15%);
+      color: $offwhite;
     }
   }
 }
