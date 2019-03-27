@@ -65,17 +65,6 @@ export default {
 <style scoped lang="scss">
 @import './src/sass/colors';
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -85,12 +74,10 @@ a {
 
 img {
   width: 50rem;
-  padding: 0.7rem;
+  padding: 0.24rem;
   border-radius: 6px;
-  background: lighten($light-blue, 65%);
+  // background: lighten($light-blue, 65%);
+  background: $light-blue;
 }
 
-.img-cap-title {
-  // color: darken(22%)
-}
 </style>
