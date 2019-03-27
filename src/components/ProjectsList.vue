@@ -1,7 +1,5 @@
 <template>
 <div class="container">
-  <h1>Hey my name is Jason, and
-  I love making websites</h1>
 
   <p>let me show you a few choice examples</p>
 
@@ -23,7 +21,7 @@
 
 <script>
 export default {
-  name: 'CurtainCall',
+  name: 'ProjectsList',
   props: {
     msg: String
   },

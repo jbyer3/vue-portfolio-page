@@ -2,8 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> 
-      <router-link to="/resume">Resume</router-link>
-      <!-- <router-link to="/about"></router-link> -->
+      <router-link to="/about">About</router-link>
     </div>
     <router-view/>
   </div>
@@ -27,22 +26,20 @@ html, body {
   color: $black;
   background: $offwhite;
   min-height: 300px;
-
+  
 }
 
 #nav {
-  // display: none;
   display: flex;
-  // flex-direction: column;
   align-items: flex-start;
   padding: 30px;
   background: $orange;
+  border-bottom: $light-blue 0.4em solid;
   a {
     font-weight: bold;
     color: $black;
-    margin-right: 2rem;
+    margin-right: 1rem;
     &.router-link-exact-active {
-      // color: lighten($ofwhite, 15%);
       color: $offwhite;
     }
   }
