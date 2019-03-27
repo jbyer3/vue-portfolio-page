@@ -63,6 +63,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import './src/sass/colors';
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -83,8 +85,9 @@ a {
 
 img {
   width: 50rem;
-  padding: 2rem;
-  background: #fff;
+  padding: 0.7rem;
+  border-radius: 6px;
+  background: lighten($light-blue, 65%);
 }
 
 .img-cap-title {

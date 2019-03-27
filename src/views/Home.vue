@@ -23,3 +23,12 @@ export default {
   })
 }
 </script>
+
+<style lang="scss">
+@import './src/sass/colors';
+
+.home {
+  background: $light-blue;
+  color: $black;
+}
+</style>
