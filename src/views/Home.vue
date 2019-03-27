@@ -28,7 +28,6 @@ export default {
 @import './src/sass/colors';
 
 .home {
-  background: $light-blue;
   color: $black;
 }
 </style>
