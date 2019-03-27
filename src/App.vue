@@ -37,7 +37,7 @@ html, body {
 #nav {
   // width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   padding: 30px;
   background: $orange;
@@ -58,6 +58,7 @@ html, body {
   // margin: 0;
   color: $offwhite;
   font-weight: 700;
+  font-size: 1.4rem;
   display: flex;
   justify-content: flex-end;
 }
