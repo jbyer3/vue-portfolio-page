@@ -1,9 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> 
-      <router-link to="/resume">Resume</router-link>
-      <!-- <router-link to="/about"></router-link> -->
+      <div class="nav-left">
+        <router-link to="/">Home</router-link> 
+        <router-link to="/about">About</router-link>
+      </div>
+      <div class="nav-right">
+        Jason Byer
+      </div>
     </div>
     <router-view/>
   </div>
@@ -27,24 +31,34 @@ html, body {
   color: $black;
   background: $offwhite;
   min-height: 300px;
-
+  
 }
 
 #nav {
-  // display: none;
+  // width: 100%;
   display: flex;
-  // flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 30px;
   background: $orange;
+  border-bottom: $light-blue 0.4em solid;
+  letter-spacing: 2px;
   a {
     font-weight: bold;
     color: $black;
-    margin-right: 2rem;
+    margin-right: 1rem;
     &.router-link-exact-active {
-      // color: lighten($ofwhite, 15%);
       color: $offwhite;
     }
   }
+}
+
+.nav-right {
+  // padding: 0;
+  // margin: 0;
+  color: $offwhite;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
 }
 </style>
