@@ -65,13 +65,14 @@ export default {
 
 .container {
   display: flex;
+  width: 80vw;
   flex-direction: column;
   align-items: baseline;
   margin-left: 5rem;
 }
 
 img {
-  width: 50rem;
+  width: 80%;
   padding: 0.24rem;
   border-radius: 6px;
   // background: lighten($light-blue, 65%);
