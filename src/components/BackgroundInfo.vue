@@ -1,9 +1,16 @@
 <template>
-<div class="container">
-  <h1>Hey my name is Jason, and
-  I love making websites</h1>
-  <h2>let me tell you a little something <span>about myself</span></h2>
-</div>
+
+  <div class="container">
+
+    <h1 class="bold-statement">"Hey, my name is Jason and
+    I love making websites"</h1>
+
+    <p id="intro-statement">let me tell you a little something <span class="intro-bolder">about myself</span>!</p>
+
+    <p class="bio-statement">Have you ever heard of a flashbulb memory? My flashbulb memory was sitting in One World Brewing in Asheville, talking to my sisters boyfriend, Seth. He saw that I was really struggling with depression in the current moment and wanted to offer a lifeline to me. <span class="exclamation-text">"You should look at learning how to code!"</span> I had initially shrugged him off saying that it wasn't anything crazy. "I don't have a brain for computers", I said. Not having any idea what that actually entailed. I had not even given his words a second thought until I returned home after that weekend.</p>
+
+    <p></p>
+  </div>
 </template>
 
 <script>
@@ -40,4 +47,23 @@ img {
   background: $light-blue;
 }
 
+.bold-statement {
+  margin: 2.6rem auto 3.2rem;
+}
+
+#intro-statement {
+  font-size: 1.5rem;
+  margin-left: 9%;
+  .intro-bolder {
+  font-weight: 600;
+  }
+}
+
+.bio-statement {
+  text-indent: 3rem;
+}
+
+.exclamation-text {
+  margin: 10px;
+}
 </style>
