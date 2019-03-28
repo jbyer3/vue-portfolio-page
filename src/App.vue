@@ -6,7 +6,7 @@
         <router-link to="/about">About</router-link>
       </div>
       <div class="nav-right">
-        Jason Byer
+        Jason <span class="last-name">Byer</span>
       </div>
     </div>
     <router-view/>
@@ -48,7 +48,8 @@ html, body {
     color: $black;
     margin-right: 1rem;
     &.router-link-exact-active {
-      color: $offwhite;
+      // color: $offwhite;
+      color: lighten($light-blue, 20%);
     }
   }
 }
@@ -61,5 +62,11 @@ html, body {
   font-size: 1.4rem;
   display: flex;
   justify-content: flex-end;
+}
+
+.last-name {
+  // color: darken($orange, 33%);
+  color: lighten($light-blue, 20%);
+  margin-left: 0.3em;
 }
 </style>
