@@ -31,7 +31,7 @@ html, body {
   color: $black;
   background: $offwhite;
   min-height: 300px;
-  width: 100vw;
+  width: 100%;
 }
 
 #nav {
