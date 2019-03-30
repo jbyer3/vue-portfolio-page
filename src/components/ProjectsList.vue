@@ -67,8 +67,8 @@ export default {
   display: flex;
   width: 80vw;
   flex-direction: column;
-  align-items: baseline;
-  margin-left: 5rem;
+  align-items: center;
+  margin: 0 5rem;
 }
 
 img {

@@ -1,6 +1,21 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <p>this router thing totally works though</p>
+    <ConstructionPage/>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+// import HelloWorld from '@/components/HelloWorld.vue'
+import ConstructionPage from '@/components/ConstructionPage.vue';
+export default {
+  name: 'home',
+  components: {
+    // HelloWorld,
+    ConstructionPage
+  },
+  data: () => ({
+    
+  })
+}
+</script>

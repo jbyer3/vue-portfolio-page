@@ -36,7 +36,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin-left: 5rem;
+  margin: 0 5rem;
 }
 
 img {
@@ -65,5 +65,8 @@ img {
 
 .exclamation-text {
   margin: 10px;
+  display: block;
+  font-style: italic;
+  font-weight: 600;
 }
 </style>
