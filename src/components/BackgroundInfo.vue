@@ -2,10 +2,12 @@
 
   <div class="container">
 
-    <h1 class="bold-statement">"Hey, my name is Jason and
-    I love making websites"</h1>
+    <div class="header-content">
+      <h1 class="bold-statement">"Hey, my name is Jason and
+      I love making websites"</h1>
 
-    <p id="intro-statement">let me tell you a little something <span class="intro-bolder">about myself</span>!</p>
+      <p id="intro-statement">let me tell you a little something <span class="intro-bolder">about myself</span>!</p>
+    </div>
 
     <p class="bio-statement">Have you ever heard of a flashbulb memory? My flashbulb memory was sitting in One World Brewing in Asheville, talking to my sisters boyfriend, Seth. He saw that I was really struggling with depression in the current moment and wanted to offer a lifeline to me. <span class="exclamation-text">"You should look at learning how to code!"</span> I had initially shrugged him off saying that it wasn't anything crazy. "I don't have a brain for computers", I said. Not having any idea what that actually entailed. I had not even given his words a second thought until I returned home after that weekend.</p>
 
@@ -36,7 +38,12 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin: 0 5rem;
+  // margin: 0 5rem;
+}
+
+.header-content {
+  width: 95%;
+  text-align: center;
 }
 
 img {
@@ -61,11 +68,14 @@ img {
 
 .bio-statement {
   text-indent: 3rem;
+  width: 66%;
+  margin-left: 5rem;
 }
 
 .exclamation-text {
   margin: 10px;
   display: block;
+  text-indent: 0;
   font-style: italic;
   font-weight: 600;
 }
