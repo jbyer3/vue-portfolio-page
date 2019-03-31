@@ -45,11 +45,13 @@ html, body {
   letter-spacing: 2px;
   a {
     font-weight: bold;
-    color: $black;
+    // color: $black;
+    color: $offwhite;
     margin-right: 1rem;
     &.router-link-exact-active {
       // color: $offwhite;
       color: lighten($light-blue, 20%);
+      // color: $light-blue;
     }
   }
 }
@@ -58,6 +60,7 @@ html, body {
   // padding: 0;
   // margin: 0;
   color: $offwhite;
+  // color: $black;
   font-weight: 700;
   font-size: 1.4rem;
   display: flex;
@@ -67,6 +70,7 @@ html, body {
 .last-name {
   // color: darken($orange, 33%);
   color: lighten($light-blue, 20%);
+  // color: $light-blue;
   margin-left: 0.3em;
 }
 </style>

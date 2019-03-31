@@ -70,7 +70,7 @@ export default {
   display: flex;
   width: 80vw;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   margin: 0 5rem;
 }
 
@@ -85,6 +85,5 @@ img {
 .project-title {
   border-bottom: 0.2rem solid $orange;
   width: 10rem;
-  // text-
 }
 </style>
