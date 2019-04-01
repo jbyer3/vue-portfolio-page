@@ -10,6 +10,14 @@
       </div>
     </div>
     <router-view/>
+    <footer>
+      <div class="footer-left">
+        <div>hi</div>
+      </div>
+      <div class="footer-right">
+        <div>hi</div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -72,5 +80,17 @@ html, body {
   color: lighten($light-blue, 20%);
   // color: $light-blue;
   margin-left: 0.3em;
+}
+
+footer {
+  height: 2rem;
+  margin: 0;
+  box-sizing: border-box;
+  padding-right: 10px;
+  width: 100%;
+  background-color: $orange; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>
