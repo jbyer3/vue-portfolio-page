@@ -3,7 +3,7 @@
     <div id="nav">
       <div class="nav-left">
         <router-link to="/">Home</router-link> 
-        <router-link to="/about">About</router-link>
+        <!-- <router-link to="/about">About</router-link> -->
       </div>
       <div class="nav-right">
         Jason <span class="last-name">Byer</span>
@@ -12,15 +12,15 @@
     <router-view/>
     <footer>
       <div class="footer-left">
-        <span>Say hello to me</span>
+        <span>Say hello!</span>
       </div>
       <div class="footer-right">
-        <div v-for="link in externLinks" :key="link.id">
-          <a :href="link.link">
-            <span>{{link.site}}</span>
-            <img :src="link.image" :alt="link.alt">
-          </a>
-        </div>
+      <div v-for="link in externLinks" :key="link.id">
+        <a :href="link.link">
+          <span>{{link.site}}</span>
+          <img :src="link.image" :alt="link.alt">
+        </a>
+      </div>
       </div>
     </footer>
   </div>
@@ -95,7 +95,7 @@ html, body {
   }
 }
 
-.nav-right, .footer-right {
+.nav-right {
   // padding: 0;
   // margin: 0;
   color: $offwhite;
@@ -113,7 +113,17 @@ html, body {
   margin-left: 0.3em;
 }
 
+.footer-right {
+  color: $offwhite;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
 .footer-left {
   font-size: 1.4rem;
+  // font-weight: 700;
 }
 </style>
