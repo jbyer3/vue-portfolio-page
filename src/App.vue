@@ -12,14 +12,44 @@
     <router-view/>
     <footer>
       <div class="footer-left">
-        <div>hi</div>
+        <span>Say hello to me</span>
       </div>
       <div class="footer-right">
-        <div>hi</div>
+        <div v-for="link in externLinks" :key="link.id">
+          <a :href="link.link">
+            <span>{{link.site}}</span>
+            <img :src="link.image" :alt="link.alt">
+          </a>
+        </div>
       </div>
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    externLinks: [
+      {
+        site: 'github',
+        image: require('@/assets/GitHub-Mark-Light-32px.png'),
+        alt: 'link to github page',
+        link: 'https://github.com/jbyer3',
+        id: 1
+      },
+      {
+        site: 'linkedin',
+        image: require('@/assets/In-White-34px-TM.png'),
+        alt: 'link to linkedin page',
+        link: 'https://www.linkedin.com/in/jason-byer-a88493141/',
+        id: 2
+      }
+    ]
+    
+  })
+}
+</script>
+
 
 <style lang="scss">
 @import './src/sass/colors';
@@ -42,13 +72,14 @@ html, body {
   width: 100%;
 }
 
-#nav {
+#nav, footer {
   // width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding: 30px;
   background: $orange;
+  color: $offwhite;
   border-bottom: $light-blue 0.4em solid;
   letter-spacing: 2px;
   a {
@@ -64,7 +95,7 @@ html, body {
   }
 }
 
-.nav-right {
+.nav-right, .footer-right {
   // padding: 0;
   // margin: 0;
   color: $offwhite;
@@ -82,15 +113,7 @@ html, body {
   margin-left: 0.3em;
 }
 
-footer {
-  height: 2rem;
-  margin: 0;
-  box-sizing: border-box;
-  padding-right: 10px;
-  width: 100%;
-  background-color: $orange; 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.footer-left {
+  font-size: 1.4rem;
 }
 </style>
