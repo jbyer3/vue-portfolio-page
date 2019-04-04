@@ -75,7 +75,7 @@ html, body {
 #nav, footer {
   // width: 100%;
   display: flex;
-  align-items: flex-end;
+  // align-items: flex-end;
   justify-content: space-between;
   padding: 30px;
   background: $orange;

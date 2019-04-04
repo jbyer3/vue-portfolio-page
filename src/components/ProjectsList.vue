@@ -52,7 +52,8 @@ export default {
         title: 'pianist portfolio',
         id: 33,
         // image: require('@/assets/business_card.jpg'),
-        image: require('@/assets/anneportfolio.png'),
+        // image: require('@/assets/anneportfolio.png'),
+        image: require('@/assets/Screenshot_2019-04-04 anne-portfolio-vue.png'),
         description: 'a portfolio site for my girlfriends business as a collaborative pianist',
         focus: 'setting up a portfolio site for a professional musician',
         link: 'https://www.pengillyplayspiano.com/'
@@ -71,7 +72,7 @@ export default {
 
 .container {
   display: flex;
-  width: 80vw;
+  // width: 80vw;
   flex-direction: column;
   align-items: center;
   margin: 0 5rem;
