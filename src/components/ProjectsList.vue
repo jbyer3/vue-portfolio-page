@@ -31,31 +31,31 @@ export default {
   data: () => ({
     projects: [
       {
-        title: 'tax calc',
+        title: 'Tax Calc',
         id: 11,
         // image: require('@/assets/tax-calc-app.png'),
         image: require('@/assets/taxcalc.png'),
-        description: 'a simple calculator to determine sales tax',
-        focus: 'vue frontend framework',
+        description: 'Simple calculator to determine sales tax',
+        focus: 'Vue frontend framework',
         link: 'http://tax-calc-app.herokuapp.com/'
       },
       {
-        title: 'tree view',
+        title: 'Tree View',
         id: 22,
         // image: require('@/assets/passport-tree.png'),
         image: require('@/assets/datatree.png'),
-        description: 'a tree view generator, built using websockets and vanilla javascript',
-        focus: 'reactive content without a JS Framework, vanilla JS only.',
+        description: 'Tree View generator, built using Socket.io and vanilla JS',
+        focus: 'Reactive content without a JS Framework',
         link: 'http://tree-4-passport.herokuapp.com/'
       },
       {
-        title: 'pianist portfolio',
+        title: 'Pianist Portfolio',
         id: 33,
         // image: require('@/assets/business_card.jpg'),
         // image: require('@/assets/anneportfolio.png'),
         image: require('@/assets/Screenshot_2019-04-04 anne-portfolio-vue.png'),
-        description: 'a portfolio site for my girlfriends business as a collaborative pianist',
-        focus: 'setting up a portfolio site for a professional musician',
+        description: 'Portfolio site for a collaborative pianist',
+        focus: 'Setting up a portfolio site',
         link: 'https://www.pengillyplayspiano.com/'
       }
     ]
