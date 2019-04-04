@@ -1,14 +1,7 @@
 <template>
 <div class="container">
-
   <p>Let me show you a few choice examples</p>
-
   <div v-for="project in projects" :key="project.id" class="app-card">
-    
-    <!-- <img :src="project.image" :alt="project.description"> -->
-    <!-- <div class="project-title">
-      <h3>{{ project.title }}</h3>
-    </div> -->
     <h3 class="project-title">{{project.title}}</h3>
     <div class="img-holder">
       <a :href="project.link">
@@ -18,7 +11,6 @@
       <p><span class="img-cap-title">focus: </span>{{project.focus}}</p>
     </div>
   </div>
-
 </div>
 </template>
 
