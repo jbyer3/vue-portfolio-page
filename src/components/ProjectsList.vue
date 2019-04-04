@@ -1,7 +1,7 @@
 <template>
 <div class="container">
 
-  <p>let me show you a few choice examples</p>
+  <p>Let me show you a few choice examples</p>
 
   <div v-for="project in projects" :key="project.id" class="app-card">
     
