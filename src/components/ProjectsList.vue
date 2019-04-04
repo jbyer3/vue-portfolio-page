@@ -33,7 +33,8 @@ export default {
       {
         title: 'tax calc',
         id: 11,
-        image: require('@/assets/tax-calc-app.png'),
+        // image: require('@/assets/tax-calc-app.png'),
+        image: require('@/assets/taxcalc.png'),
         description: 'a simple calculator to determine sales tax',
         focus: 'vue frontend framework',
         link: 'http://tax-calc-app.herokuapp.com/'
@@ -41,7 +42,8 @@ export default {
       {
         title: 'tree view',
         id: 22,
-        image: require('@/assets/passport-tree.png'),
+        // image: require('@/assets/passport-tree.png'),
+        image: require('@/assets/datatree.png'),
         description: 'a tree view generator, built using websockets and vanilla javascript',
         focus: 'reactive content without a JS Framework, vanilla JS only.',
         link: 'http://tree-4-passport.herokuapp.com/'
@@ -49,7 +51,8 @@ export default {
       {
         title: 'pianist portfolio',
         id: 33,
-        image: require('@/assets/business_card.jpg'),
+        // image: require('@/assets/business_card.jpg'),
+        image: require('@/assets/anneportfolio.png'),
         description: 'a portfolio site for my girlfriends business as a collaborative pianist',
         focus: 'setting up a portfolio site for a professional musician',
         link: 'https://www.pengillyplayspiano.com/'
@@ -70,20 +73,34 @@ export default {
   display: flex;
   width: 80vw;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   margin: 0 5rem;
 }
 
 img {
   width: 80%;
-  padding: 0.24rem;
+  padding: 0.33rem;
   border-radius: 6px;
-  // background: lighten($light-blue, 65%);
   background: $light-blue;
+  margin: 0 auto;
 }
 
 .project-title {
   border-bottom: 0.2rem solid $orange;
   width: 10rem;
+  text-align: center;
+}
+
+.app-card, a  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-holder {
+  // margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>

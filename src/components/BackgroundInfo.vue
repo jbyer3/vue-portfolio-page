@@ -38,7 +38,8 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
+  width: 100%;
   // margin: 0 5rem;
 }
 
@@ -69,8 +70,11 @@ img {
 
 .bio-statement {
   text-indent: 3rem;
-  width: 66%;
-  margin-left: 5rem;
+  width: 80%;
+  // margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
   line-height: 1.5;
 }
 
