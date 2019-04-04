@@ -12,7 +12,7 @@
     <router-view/>
     <footer>
       <div class="footer-left">
-        <span>Say hello!</span>
+        <!-- <span>Say hello!</span> -->
       </div>
       <div class="footer-right">
       <div v-for="link in externLinks" :key="link.id">
